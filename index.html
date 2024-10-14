@@ -6,10 +6,11 @@
     <title>陳詩璇的個人簡介</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #bd9999;
+            background-color: #f4f4f9;
+            color: #333;
         }
         .container {
             width: 80%;
@@ -17,32 +18,31 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: #282c34;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+            padding: 20px 0;
+            border-bottom: #61dafb 4px solid;
         }
         header a {
-            color: #fff;
+            color: #61dafb;
             text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+            font-weight: bold;
+            margin: 0 10px;
         }
         header ul {
             padding: 0;
             list-style: none;
         }
         header li {
-            float: left;
             display: inline;
-            padding: 0 20px 0 20px;
+            margin: 0 15px;
         }
         header #branding {
             float: left;
         }
         header #branding h1 {
             margin: 0;
+            font-size: 24px;
         }
         header nav {
             float: right;
@@ -50,34 +50,55 @@
         }
         .showcase {
             min-height: 400px;
-            background: url('showcase.jpg') no-repeat 0 -400px;
-            text-align: center;
+            background: linear-gradient(to bottom, #61dafb, #282c34);
             color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         .showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
+            font-size: 50px;
             margin-bottom: 10px;
         }
         .showcase p {
-            font-size: 20px;
+            font-size: 22px;
         }
         .content {
-            padding: 20px;
+            padding: 40px 20px;
             background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
         }
         .content h2 {
-            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #61dafb;
         }
-        .content p {
-            line-height: 1.6em;
+        .content p, .content ul {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .content ul {
+            list-style: square inside;
+            padding-left: 20px;
         }
         footer {
             padding: 20px;
-            margin-top: 20px;
+            background-color: #282c34;
             color: #fff;
-            background-color: #333;
             text-align: center;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        header a:hover, nav a:hover {
+            color: #fff;
         }
     </style>
 </head>
@@ -85,7 +106,7 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1>個人簡介</h1>
+                <h1>陳詩璇的個人簡介</h1>
             </div>
             <nav>
                 <ul>
@@ -99,29 +120,28 @@
 
     <section class="showcase">
         <div class="container">
-            <h1>歡迎來到我的個人網站</h1>
-            <p>這裡是我的個人簡介</p>
+            <h1>歡迎來到我的網站</h1>
+            <p>探索我的學習與技能</p>
         </div>
     </section>
 
     <section class="content">
         <div class="container">
             <h2>關於我</h2>
-            <p>你好，我是陳詩璇，是一位學生。</p>
+            <p>你好，我是陳詩璇，一名專注於學習的學生，對技術與創新充滿熱情。</p>
             <h2>技能</h2>
-            <p>以下是我的一些主要技能：</p>
+            <p>以下是我擅長的技能：</p>
             <ul>
-                <li>技能1</li>
-                <li>技能2</li>
-                <li>技能3</li>
-                <li>技能4</li>
+                <li>Python 程式設計</li>
+                <li>資料分析</li>
+                <li>網頁設計</li>
+                <li>雲端運算基礎</li>
             </ul>
-
         </div>
     </section>
 
     <footer>
-        <p>聯絡我:C111196119@nkust.edu.tw</p>
+        <p>聯絡我：<a href="mailto:C111196119@nkust.edu.tw">C111196119@nkust.edu.tw</a></p>
     </footer>
 </body>
 </html>
